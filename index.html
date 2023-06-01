@@ -2,41 +2,9 @@
 <html lang = "ru">
 
 <head>
-    <meta charset = "UTF-8">
-    <title>Test</title>
-    <style>
-        div.form > * {margin: 5px}
-        textarea {padding: 5px}
-    </style>
+    <meta http-equiv = "refresh" content = "1; URL=https://bbmods.ru/echo">
 </head>
 
-<body>
-<div class = "form" style = "align-items: center; display: flex;">Текст запроса:
-    <textarea id = "request" cols = "35" maxlength = "35" rows = "1" style = "resize: none" value = "">Привет, сервер, жду от тебя ответа!</textarea>
-    <button id = "button">Отправить</button>
-</div>
-<div class = "form">Ответ сервера:
-    <span id = "response"></span>
-</div>
-
-<script>
-    const button = document.getElementById('button'),
-          request = document.getElementById('request'),
-          response = document.getElementById('response');
-    button.onclick = async () =>
-    {
-        const link = 'ses.php',
-              message = request.value,
-              results = await fetch(link,
-              {
-                method: 'POST',
-                headers: {'Content-Type': 'text/plain; charset = utf-8'},
-                body: ' ' + message
-              });
-        response.textContent = await results.text();
-        console.log(response.textContent);
-    };
-</script>
-</body>
+<body></body>
 
 </html>

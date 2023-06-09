@@ -1,24 +1,16 @@
-# bend-avt
+# BEND-AVT
 The course "Automation of web development".
 
-# files
+# Files
 app.js        => "Hello, World" for local server;
 
-index.html    => redirection to remote server;
-
-|
-
-V
+index.html    => redirection to remote server (see below);
 
 server/app.js => simple realization of remote echo server.
 
-# файлы
+# Файлы
 app.js        => "Hello, World" под локальный сервер;
 
-index.html    => переадресация на удалённый сервер;
-
-|
-
-V
+index.html    => переадресация на удалённый сервер (см. ниже);
 
 server/app.js => простая реализация удалённого эхо-сервера.

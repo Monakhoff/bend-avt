@@ -20,7 +20,7 @@ async function run()
     try
     {
         await client.connect();
-        const dataBase = client.db(`${userName}`),
+        const dataBase = client.db('admin'),
               result = await dataBase.command({ping: 1});
         console.log('Connection established.');
         const collection = dataBase.collection('users');
